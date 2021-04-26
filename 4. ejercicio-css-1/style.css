@@ -1,0 +1,36 @@
+/* Primera lista */
+.lista {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.lista li {
+    list-style-position: inside;
+}
+
+.lista li::after {
+    content: '\01F525';
+}
+
+.lista li:nth-child(odd) {
+    text-decoration: underline green double;
+}
+.lista li:last-child {
+    background-color: rgb(0, 0, 255);
+}
+
+li:lang(en) {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* Segunda lista */
+
+#provincias li {
+    list-style-type: upper-roman;
+}
+
+#provincias li:nth-child(2) {
+    list-style-type: none;
+}
