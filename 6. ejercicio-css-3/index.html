@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio CSS 1</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio CSS 1</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
+    <body>
+        <header class="header">
+            <h1>Título principal</h1>
+            <h2>Subtítulo</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium autem consectetur aspernatur enim ipsum. Consequatur
+                tenetur reprehenderit hic officia atque, blanditiis aliquam
+                nostrum optio odit in eligendi temporibus, deleniti laboriosam
+                nulla neque, quis iure natus voluptates ipsum fugit mollitia
+                iste?
+            </p>
+        </header>
 
-<body>
+        <main>
+            <section class="section">
+                <h3 class="section-title">Título sección</h3>
+                <div class="section-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Esse fugiat quia exercitationem doloremque expedita
+                        ullam illo possimus maiores repellat necessitatibus a
+                        soluta sed, qui saepe sunt odit voluptates enim error.
+                        Asperiores ipsum voluptatem atque veritatis nobis ut,
+                        facere sequi eum cupiditate, consequatur, voluptates
+                        dolorem perferendis ab esse dolor nihil odio!
+                    </p>
+                    <figure class="section-image">
+                        <img
+                            src="./photo.jpg"
+                            alt="travel photo"
+                            title="traveling around"
+                        />
+                    </figure>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Aut eos eveniet totam recusandae necessitatibus
+                        eaque ullam saepe odio. Ipsam rem fuga in recusandae
+                        nulla soluta!
+                    </p>
+                </div>
+            </section>
 
-</body>
+            <section class="form">
+                <h3 class="form-title">Formulario</h3>
+                <form action="#" method="GET" class="form-content">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
 
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" />
+
+                    <label for="coments">Comentarios</label>
+                    <textarea
+                        name="coments"
+                        id="coments"
+                        cols="50"
+                        rows="10"
+                    ></textarea>
+
+                    <input class="form-button" type="submit" value="Enviar" />
+                </form>
+            </section>
+        </main>
+    </body>
 </html>

@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(242, 165, 74);
+    text-align: center;
+}
+.header {
+    font-size: xx-large;
+    color: whitesmoke;
+
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+
+.team {
+    padding: 20px 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.team-card {
+    flex-basis: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 15px rgb(165, 117, 59);
+    display: grid;
+    grid-template-rows: 0.6fr;
+    margin-bottom: 10px;
+
+    transition: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    animation-name: appear;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+}
+
+.team-card:nth-child(1) {
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.team-card:nth-child(2) {
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.team-card:nth-child(3) {
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+
+.team-card:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.profile {
+    background-color: whitesmoke;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile > * {
+    margin: 0;
+}
+
+.profile-title {
+    order: 1;
+    font-size: large;
+}
+
+.profile-img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    order: 0;
+}
+
+.profile-img > img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.profile-links {
+    order: 2;
+    display: grid;
+    justify-content: space-between;
+    padding: 0;
+}
+.profile-links--4anchor {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.profile-links--5anchor {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.profile-links li {
+    list-style-type: none;
+}
+
+.profile-links img {
+    width: 100%;
+    max-width: 50px;
+}
+
+.info {
+    background-color: hsl(266, 32%, 52%);
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+.info * {
+    padding: 0 25px;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
