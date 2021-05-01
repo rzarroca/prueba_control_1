@@ -107,6 +107,10 @@ body {
     list-style-type: none;
 }
 
+.profile-links li:hover {
+    box-shadow: 0 0 2px gray;
+}
+
 .profile-links img {
     width: 100%;
     max-width: 50px;

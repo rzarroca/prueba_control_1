@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -20,7 +20,7 @@ main {
     padding-right: 200px;
 }
 
-@media (max-width: 530px) {
+@media (max-width: 650px) {
     .header {
         padding-right: 50px;
         text-align: center;
@@ -47,7 +47,7 @@ main {
 }
 
 .section-content > * {
-    flex: 1 1 40%;
+    flex: 1 1 42%;
 }
 
 .section-image > img {

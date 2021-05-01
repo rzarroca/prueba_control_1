@@ -1,29 +1,35 @@
-h1,
-form {
+/* Punto 1 */
+body {
     max-width: 800px;
     min-width: 400px;
+    padding: 15px;
     margin: auto;
 }
 
+/* Punto 2 */
 input:required {
     border-color: #ff0000;
 }
 
+/* Punto 3 */
 fieldset {
     background-color: lightgray;
     padding: 1rem;
 }
 
+/* Punto 4 */
 fieldset:hover {
     background-color: gray;
 }
 
-/* fielsets
- */
-/* form:nth-child(2) {
-    border-bottom: 5px solid red;
-} */
+/* Punto 5 */
 
+.border {
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: black;
+}
+/* Punto 6 */
 input[type='submit'] {
     background-color: black;
     color: white;
